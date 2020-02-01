@@ -1,0 +1,65 @@
+received_message: "&a&l(!) &aYou have received x&a&n%amount%&a of &r%item_name%&r"
+plugin-reloaded: "&a&l(!) &aSuccessfully reloaded &d&nEnder Vaults&a!"
+unknown-player: "&c&l(!) &cUnknown player!"
+unknown-crate: "&c&l(!) &cUnknown crate name!"
+
+Crates:
+  October:
+    start_sound: "CLICK" #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html
+    start_particles:
+      particle_effect: EXPLOSION_NORMAL #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+      amount: 1
+      speed: 0.5
+    end_sound: "CLICK"
+    end_particles:
+      amount: 1
+      speed: 0.5
+      particle_effect: EXPLOSION_NORMAL
+    perm_particles:
+      amount: 1
+      speed: 0.5
+      particle_effect: EXPLOSION_NORMAL
+    randomSelected: 1
+    item:
+      name: "&6&l*&e&l*&6&l* &e&nOctober Vault&6&l *&e&l*&6&l*"
+      material: "BEACON" #Make sure the material is place-able, https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+      lore:
+        - "&7&nLimited Edition&7 - Obtained in &7&nOctober&r"
+        - "&r"
+        - "&d&nStashed Items:"
+        - "&a&l* &71x &a$2000"
+        - "&6&l* &71x &6Halloween Costume"
+       
+ 
+    #There's 1 variable replaced in commands: %player%
+ 
+    guaranteed_rewards:
+      1:
+        sound: "CLICK"
+        commands:
+        - "eco give %player% 2000" #command without slash
+        hologram:
+          material_to_show: "ENDER_CHEST" #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+          enchanted: true
+          text: "&a$2000"
+        particles:
+          particle_effect: "CLOUD" #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+          amount: 1
+          speed: 0.5
+    
+    random_selected:
+      1:
+        sound: "CLICK"
+        commands:
+        - "give %player% leather_helmet 1" #command without slash
+        - "give %player% leather_chestplate 1"
+        - "give %player% leather_leggings 1"
+        - "give %player% leather_boots 1"
+        hologram:
+          material_to_show: "LEATHER_CHESTPLATE" #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+          enchanted: true
+          text: "&6Halloween Costume"
+        particles:
+          particle_effect: "CLOUD" #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Particle.html
+          amount: 1
+          speed: 1

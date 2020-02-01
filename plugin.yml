@@ -1,0 +1,5 @@
+name: EnderVaults
+description: Remake of SaiCoPvP's Ender Vaults!
+author: Sin
+main: me.sin.endervaults.Core
+version: Release
